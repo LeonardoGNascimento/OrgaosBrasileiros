@@ -1,0 +1,41 @@
+:root{
+    --textColor: #9bcaf3;
+    --backgroundColor: #067275;
+    --borderColor:;
+    --titleColor: ;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+#titulo{
+    margin-right: 64px;
+
+}
+
+*{
+    background-color: #067275;
+}
+#tabela, #tabelaGeral{
+    border: 5px solid #0c3535;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+#tabela td , #tabelaGeral td{
+    color: #070808;
+
+    font-family: Arial, sans-serif;
+  }
+#tabela td:hover, #tabelaGeral td:hover {
+    background-color: #0d4352;
+    transition: background-color 0.3s ease-in-out;
+  }
+#tabela td a, #tabelaGeral td a{
+    color: #422d7a;
+}
+.tituloTabela{
+    font-family: Arial, sans-serif;
+    color: #273636;
+    text-align: center;
+}
