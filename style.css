@@ -1,8 +1,52 @@
 :root{
-    --textColor: #9bcaf3;
-    --backgroundColor: #067275;
+    /*--textColor: #070808;;*/
+    --textColor: #000000;
+    /*--backgroundColor: #067275;*/
+    --backgroundColor: #bcddec;
     --borderColor:;
-    --titleColor: ;
+    /*--titleColor: #273636;;*/
+    --titleColor: #744631;
+    /*--headerColor: #09595c;*/
+    --headerColor: #0094d9;
+}
+*{
+    margin: 0px;
+    background-color: var(--backgroundColor)
+}
+.header{
+    box-shadow: 4px 4px 4px var(--headerColor);
+    background-color: var(--headerColor);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    align-items: center;
+    width: 100%;
+
+
+}
+.header img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.header label, .header input{
+
+}
+.header input{
+    height: 32px;;
+    border: 2px solid;
+    border-radius: 9px 9px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); 
+    background-color: var(--headerColor);
+}
+.header input::placeholder{
+    color:#000000;
+}
+.header label{
+    font-size: 24px;
+    background-color: var(--headerColor)
+}
+.header div{
+    background-color: var(--headerColor)
 }
 
 .container{
@@ -10,32 +54,35 @@
     flex-wrap: wrap;
     justify-content: space-evenly
 }
+.tituloTabela{
+    font-family: Arial, sans-serif;
+    color: #080a24;
+    /*color: var(--titleColor)*/
+    padding-bottom: 16px;
+    text-align: center;
+}
 #titulo{
     margin-right: 64px;
-
 }
 
-*{
-    background-color: #067275;
-}
+
 #tabela, #tabelaGeral{
-    border: 5px solid #0c3535;
+    border: 5px solid #062e53;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    
 }
 #tabela td , #tabelaGeral td{
-    color: #070808;
+    color: var(--textColor);
 
     font-family: Arial, sans-serif;
+    height: 26px;
+    text-align: center;
+
   }
 #tabela td:hover, #tabelaGeral td:hover {
-    background-color: #0d4352;
+    background-color: #4787d1;
     transition: background-color 0.3s ease-in-out;
   }
 #tabela td a, #tabelaGeral td a{
-    color: #422d7a;
-}
-.tituloTabela{
-    font-family: Arial, sans-serif;
-    color: #273636;
-    text-align: center;
+    color: #4042be;
 }

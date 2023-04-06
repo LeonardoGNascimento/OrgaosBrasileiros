@@ -11,14 +11,14 @@ const titulos = {
 };
 
 function criarLista(nomeEstado, tabela) {
-  const estado = nomeEstado;
+  let estado = nomeEstado;
   let lista = "";
   estado.map((e) => {
     lista += `
    <tr>
     <td>${e.nome}</td>
     <td>${e.cod}</td>
-    <td><a href="${e.link}">Vai ser hackeado ao clicar</a></td>
+    <td><a href="${e.link}" target="_blank">Vai ser hackeado ao clicar</a></td>
    </tr>
   `;
   });
@@ -48,7 +48,7 @@ function tableHeader() {
 }
 table.innerHTML = tableHeader();
 tabelaGeral.innerHTML = tableHeader();
-// -----------
+// ---------------- EVENTOS AO CLICAR EM UM ESTADO DO MAPA
 
 criarLista(orgaosGerais, tabelaGeral);
 estados.forEach((e) => {
@@ -171,3 +171,32 @@ estados.forEach((e) => {
     }
   });
 });
+//------------------------- EVENTO AO PESQUISAR UM ÓRGÃO-----------------------
+const inputBuscar = document.getElementById("buscar");
+
+inputBuscar.addEventListener("change", (e) => {
+  let valorDigitado = e.target.value;
+  let encontrou = false;
+  console.log(encontrou);
+  orgaos.todosEstados.forEach((evento) => {
+    evento.map((todosObjetos) => {
+      if (todosObjetos.cod === valorDigitado) {
+        encontrou = true;
+        let replicaObj = [
+          {
+            nome: todosObjetos.nome,
+            cod: todosObjetos.cod,
+            link: todosObjetos.link,
+          },
+        ];
+        trocarLista();
+        criarLista(replicaObj, table);
+        inputBuscar.value = "";
+      }
+    });
+  });
+  if (encontrou === false) {
+    alert("Código não localizado");
+  }
+});
+// -------------------------------------------------

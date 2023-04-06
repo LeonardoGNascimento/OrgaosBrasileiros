@@ -562,6 +562,35 @@ const paraiba = [
   },
   { nome: "PREFEITURA MUNICIPAL DE PITIMBU - PB", cod: "221390", link: "" },
 ];
+const todosEstados = [
+  tocantins,
+  bahia,
+  sergipe,
+  pernambuco,
+  alagoas,
+  riograndedonorte,
+  ceara,
+  piaui,
+  maranhao,
+  amapa,
+  para,
+  roraima,
+  amazonas,
+  acre,
+  rondonia,
+  matogrosso,
+  matogrossodosul,
+  goias,
+  parana,
+  santacatarina,
+  riograndedosul,
+  saopaulo,
+  minasgerais,
+  riodejaneiro,
+  espiritosanto,
+  distritofederal,
+  paraiba,
+];
 export {
   tocantins,
   bahia,
@@ -590,6 +619,7 @@ export {
   espiritosanto,
   distritofederal,
   paraiba,
+  todosEstados,
 };
 /*
 {
