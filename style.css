@@ -1,0 +1,141 @@
+:root{
+    /*--textColor: #070808;;*/
+    --textColor: #000000;
+    /*--backgroundColor: #067275;*/
+    --backgroundColor: #bcddec;
+    --borderColor:;
+    /*--titleColor: #273636;;*/
+    --titleColor: #744631;
+    /*--headerColor: #09595c;*/
+    --headerColor: #0094d9;
+}
+*{
+    margin: 0px;
+    background-color: var(--backgroundColor)
+}
+.header{
+    box-shadow: 4px 4px 4px var(--headerColor);
+    background-color: var(--headerColor);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    align-items: center;
+    width: 100%;
+
+
+}
+.header img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.header label, .header input{
+
+}
+.header input, .header #btnSQL, .header #btnDefault{
+    height: 32px;;
+    border: 2px solid;
+    border-radius: 9px 9px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); 
+    background-color: var(--headerColor);
+}
+.header input::placeholder{
+    color:#000000;
+}
+.header label, .header #btnSQL, .header #btnDefault{
+    font-size: 24px;
+    background-color: var(--headerColor)
+}
+.header #btnSQL, .header #btnDefault{
+padding: 7px
+}
+.header #btnSQL:hover, .header #btnDefault:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+.header div{
+    background-color: var(--headerColor)
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+.tituloTabela{
+    font-family: Arial, sans-serif;
+    color: #080a24;
+    /*color: var(--titleColor)*/
+    padding-bottom: 16px;
+    text-align: center;
+}
+#titulo{
+    margin-right: 64px;
+}
+
+
+#tabela, #tabelaGeral, #tabelaDetalhes{
+    border: 1px solid #062e53;
+    box-shadow: 1px 1px 4px rgba(39, 39, 39, 0.5);
+    border-radius: 5px;
+    
+    
+}
+#tabela td , #tabelaGeral td, #tabelaDetalhes td{
+    color: var(--textColor);
+
+    font-family: Arial, sans-serif;
+    height: 26px;
+    text-align: center;
+
+  }
+#tabela td:hover, #tabelaGeral td:hover, #tabelaDetalhes td:hover {
+    background-color: #4787d1;
+    transition: background-color 0.3s ease-in-out;
+  }
+#tabela td a, #tabelaGeral td a{
+    color: #4042be;
+}
+#teste{
+   position: relative;
+}
+#fecharDetalhes{
+    position: absolute;
+}
+
+td {
+    border-right: solid 1px black;
+}
+
+#sqlContent h2{
+    border: 1px solid #062e53;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 3px;
+    margin: 5px;
+}
+#sqlContent h2:hover{
+    box-shadow: 1px 1px 4px rgba(39, 39, 39, 0.5);
+    cursor: pointer;
+}
+#sqlContent #remessaRecibo, #multas, #usuarios{
+    border: 2px solid black;
+    width: fit-content;
+    padding: 15px;
+    background-color: #c9ecfc;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(39, 39, 39, 0.5);
+}
+#sqlContent #remessaRecibo:hover, #multas:hover, #usuarios:hover{
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(39, 39, 39, 0.99);
+}
+#sqlContent #remessaRecibo p, #multas p, #usuarios p{
+    margin: 5px;
+    background-color: #c9ecfc;
+}
+
+.tituloSQL{
+    background-color: #c9ecfc;
+
+}
