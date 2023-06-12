@@ -146,7 +146,7 @@ const orgaosGerais = [
   {
     nome: "DPRF",
     cod: "100",
-    link: "https://cpag.prf.gov.br/nada_consta/index.jsf",
+    link: "https://nadaconsta.prf.gov.br/nada_consta/index.jsf",
   },
   { nome: "DNIT", cod: "300", link: "http://servicos.dnit.gov.br/multas/" },
 ];
